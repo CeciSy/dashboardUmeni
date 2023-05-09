@@ -2,6 +2,7 @@ import "./assets/css/app.css"
 import Mandalorian from "./assets/images/mandalorian.jpg"
 import JordanWalke from "./assets/images/jordan-walke.png"
 import SideBar from "./components/SideBar/SideBar"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
             <SideBar/>
 		{/* <!-- End of Sidebar --> */}
             
-		{/* <!-- Content Wrapper --> */}
-		<div id="content-wrapper" className="d-flex flex-column">
+		{/* <!-- Wrapper --> */}
+		<div id="wrapper" className="d-flex flex-column">
 
 			{/* <!-- Main Content --> */}
 			<div id="content">
@@ -64,19 +65,19 @@ function App() {
 				{/* <!-- Content Row Top --> */}
 				<div className="container-fluid">
 					<div className="d-sm-flex align-items-center justify-content-between mb-4">
-						<h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+						<h1 className="h3 mb-0 text-gray-800">Dashboard Vinos</h1>
 					</div>
 				
-					{/* <!-- Content Row Movies--> */}
+					{/* <!-- Content Row Vinos--> */}
 					<div className="row">
 
-						{/* <!-- Movies in Data Base --> */}
+						{/* <!-- Vinos in Data Base --> */}
 						<div className="col-md-4 mb-4">
 							<div className="card border-left-primary shadow h-100 py-2">
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Movies in Data Base</div>
+											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Vinos en la Base de Datos</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
 										</div>
 										<div className="col-auto">
@@ -93,7 +94,7 @@ function App() {
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total awards</div>
+											<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total de Cepas</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
 										</div>
 										<div className="col-auto">
@@ -110,7 +111,7 @@ function App() {
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Actors quantity
+											<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Total de usuarios
 											</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
 										</div>
@@ -122,16 +123,16 @@ function App() {
 							</div>
 						</div>
 					</div>
-					{/* <!-- End movies in Data Base --> */}
+					{/* <!-- Fin vinos en la Base de Datos --> */}
 					
 	
-					{/* <!-- Content Row Last Movie in Data Base --> */}
+					{/* <!-- Content Row último vino en la Base de Datos --> */}
 					<div className="row">
-						{/* <!-- Last Movie in DB --> */}
+						{/* <!-- Último vino en la Base de Datos --> */}
 						<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Last movie in Data Base</h5>
+									<h5 className="m-0 font-weight-bold text-gray-800">Último vino en la Base de Datos</h5>
 								</div>
 								<div className="card-body">
 									<div className="text-center">
@@ -148,77 +149,77 @@ function App() {
 						<div className="col-lg-6 mb-4">						
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Genres in Data Base</h5>
+									<h5 className="m-0 font-weight-bold text-gray-800">Cepas en la Base de Datos</h5>
 								</div>
 								<div className="card-body">
 									<div className="row">
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Acción
+													Malbec
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Animación
+													Cabernet Sauvignon
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Aventura
+													Cabernet Franc
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Ciencia Ficción
+													Syrah
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Comedia
+													Petit Verdot
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Documental
+													Pinot Noir
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Drama
+													Chardonnay
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Fantasia
+													Sauvignon Blanc
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Infantiles
+													Torrontés
 												</div>
 											</div>
 										</div>
 										<div className="col-lg-6 mb-4">
 											<div className="card bg-dark text-white shadow">
 												<div className="card-body">
-													Musical
+													Semillón
 												</div>
 											</div>
 										</div>
@@ -230,22 +231,16 @@ function App() {
 					</div>
 				</div>
 				{/* <!--End Content Row Top--> */}
+			<div><h2>Listado Vinos</h2></div>
 			</div>
 			{/* <!-- End of MainContent --> */}
 
 			{/* <!-- Footer --> */}
-			<footer className="sticky-footer bg-white">
-				<div className="container my-auto">
-					<div className="copyright text-center my-auto">
-						<span>Copyright &copy; Dashboard 2021</span>
-					</div>
-				</div>
-			</footer>
+				<Footer/>
 			{/* <!-- End of Footer --> */}
 
 		</div>
-		{/* <!-- End of Content Wrapper --> */}
-
+		{/* <!-- End of Wrapper --> */}
 	</div>
   );
 }
