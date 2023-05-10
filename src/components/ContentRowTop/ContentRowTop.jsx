@@ -1,6 +1,7 @@
 import React from "react";
-import Mandalorian from "../../assets/images/mandalorian.jpg"
+import Cepas from "./SubComponents/Cepas/Cepas";
 import Totales from "./SubComponents/Totales/Totales";
+import UltimoVino from "./SubComponents/UltimoVino/UltimoVino";
 
 function ContentRowTop() {
     return(
@@ -9,117 +10,16 @@ function ContentRowTop() {
             <h1 className="h3 mb-0 text-gray-800">Dashboard Vinos</h1>
         </div>
     
-        {/* <!-- Content Row Vinos--> */}
         <div className="row">
-            {/* <!-- Totales --> */}
             <Totales/>
-            {/* <!-- Fin de Totales --> */}
+            <Totales/>
+            <Totales/>
         </div>
        
-        
-
-        {/* <!-- Content Row último vino en la Base de Datos --> */}
         <div className="row">
-            {/* <!-- Último vino en la Base de Datos --> */}
-            <div className="col-lg-6 mb-4">
-                <div className="card shadow mb-4">
-                    <div className="card-header py-3">
-                        <h5 className="m-0 font-weight-bold text-gray-800">Último vino en la Base de Datos</h5>
-                    </div>
-                    <div className="card-body">
-                        <div className="text-center">
-                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style= {{width: "40rem"}} src={Mandalorian} alt=" Star Wars - Mandalorian "/>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-                        <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
-                    </div>
-                </div>
-            </div>
-            {/* <!-- End content row last movie in Data Base --> */}
+            <UltimoVino/>
 
-            {/* <!-- Cepas en la base de datos --> */}
-            <div className="col-lg-6 mb-4">						
-                <div className="card shadow mb-4">
-                    <div className="card-header py-3">
-                        <h5 className="m-0 font-weight-bold text-gray-800">Cepas en la Base de Datos</h5>
-                    </div>
-                    <div className="card-body">
-                        <div className="row">
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Malbec
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Cabernet Sauvignon
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Cabernet Franc
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Syrah
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Petit Verdot
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Pinot Noir
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Chardonnay
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Sauvignon Blanc
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Torrontés
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 mb-4">
-                                <div className="card bg-dark text-white shadow">
-                                    <div className="card-body">
-                                        Semillón
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Cepas/>
         </div>
     </div>
     )
