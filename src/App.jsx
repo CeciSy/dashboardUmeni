@@ -15,9 +15,6 @@ function App() {
 		<ContentWrapper/>
 		{/* <!-- End of Wrapper --> */}
 		
-		{/* <!-- Footer --> */}
-		<Footer/>
-		{/* <!-- End of Footer --> */}
 	</div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Cepas from "./SubComponents/Cepas/Cepas";
 import Totales from "./SubComponents/Totales/Totales";
 import UltimoVino from "./SubComponents/UltimoVino/UltimoVino";
@@ -41,6 +42,8 @@ function ContentRowTop() {
 
             <Cepas/>
         </div>
+        
+        <Footer/>
     </div>
     )
 }
