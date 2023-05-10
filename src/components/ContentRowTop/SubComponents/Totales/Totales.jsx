@@ -11,8 +11,8 @@ function Totales(props) {
 						  <div className="h5 mb-0 font-weight-bold text-gray-800">{props.cifra}</div>
 					</div>
 										<div className="col-auto">
-										    <i class="fa-solid fa-wine-glass-empty fa-shake fa-xl"></i>
-											<i class="fa-solid fa-wine-glass-empty fa-shake fa-xl"></i>
+										    <i className="fa-solid fa-wine-glass-empty fa-shake fa-xl"></i>
+											<i className="fa-solid fa-wine-glass-empty fa-shake fa-xl"></i>
 											
 										</div>
 									</div>
