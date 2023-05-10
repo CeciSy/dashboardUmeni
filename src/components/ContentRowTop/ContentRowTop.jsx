@@ -1,5 +1,6 @@
 import React from "react";
 import Mandalorian from "../../assets/images/mandalorian.jpg"
+import Totales from "./SubComponents/Totales/Totales";
 
 function ContentRowTop() {
     return(
@@ -10,11 +11,11 @@ function ContentRowTop() {
     
         {/* <!-- Content Row Vinos--> */}
         <div className="row">
-
             {/* <!-- Totales --> */}
-            
+            <Totales/>
+            {/* <!-- Fin de Totales --> */}
         </div>
-        {/* <!-- Fin de Totales --> */}
+       
         
 
         {/* <!-- Content Row último vino en la Base de Datos --> */}
