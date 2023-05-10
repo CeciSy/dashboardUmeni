@@ -4,6 +4,25 @@ import Totales from "./SubComponents/Totales/Totales";
 import UltimoVino from "./SubComponents/UltimoVino/UltimoVino";
 
 function ContentRowTop() {
+
+    let arrayTotales = [
+        {
+            titulo : "Total Vinos",
+            cifra: 21,
+            color: "primary",
+        },
+        {
+            titulo : "Total Usuarios",
+            cifra: 43,
+            color: "succes"            
+        },
+        {
+            titulo : "Total Cepas",
+            cifra: 10,
+            color: "warning"            
+        }
+        
+    ]
     return(
         <div className="container-fluid">
         <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -11,9 +30,10 @@ function ContentRowTop() {
         </div>
     
         <div className="row">
-            <Totales/>
-            <Totales/>
-            <Totales/>
+           {
+            arrayTotales.map((totales,i)=> <Totales key={totales.titulo + i} titulo={totales.titulo} color={totales.color} cifra={totales.cifra}/>)
+           }
+            
         </div>
        
         <div className="row">
