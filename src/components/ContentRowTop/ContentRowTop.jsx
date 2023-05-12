@@ -41,13 +41,9 @@ function ContentRowTop() {
        
         <div className="row">
             <UltimoVino/>
-
             <Cepas/>
+            <ListadoDeVinos/>
         </div>
-        
-        <ListadoDeVinos/>
-
-        <Footer/>
     </div>
     )
 }
