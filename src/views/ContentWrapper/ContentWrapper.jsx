@@ -12,10 +12,8 @@ function ContentWrapper() {
             {/* <!-- Content Row Top --> */}
 				<ContentRowTop/>
 			{/* <!--End Content Row Top--> */}
-			
-            <div><h2>Listado Vinos</h2></div>
 			</div>
-			
+		
             {/* <!-- End of MainContent --> */}
 
 			

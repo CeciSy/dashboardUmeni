@@ -1,3 +1,4 @@
+import React from "react"
 import "./assets/css/app.css"
 import SideBar from "./components/SideBar/SideBar"
 import ContentWrapper from "./views/ContentWrapper/ContentWrapper";
