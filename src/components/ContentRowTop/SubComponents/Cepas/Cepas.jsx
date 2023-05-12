@@ -3,25 +3,25 @@ import CepasCard from "./subcomponents/CepasCard";
 
 class Cepas extends Component {
 
-    constructor(){
+    constructor() {
         super()
-        this.state ={
+        this.state = {
             cepaList: []
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
-        fetch("http://localhost:3031/api/cepaList")
-        .then(respuesta =>{
-        return respuesta.json()
-        })
-        .then(vinos =>{
-        //console.log(cepas)
-        this.setState({cepaList: vinos.data})
-        })
-        .catch(error => console.log(error))
-        }
+        fetch("http://localhost:3031/apiVinos/listadoCepas")
+            .then(respuesta => {
+                return respuesta.json()
+            })
+            .then(cepas => {
+                console.log(cepas)
+                this.setState({ cepaList: cepas.data })
+            })
+            .catch(error => console.log(error))
+    }
 
     render() {
         return (
@@ -31,9 +31,11 @@ class Cepas extends Component {
                         <h5 className="m-0 font-weight-bold text-gray-800">Cepas en la Base de Datos</h5>
                     </div>
                     <div className="card-body">
-                        {
-                        this.state.cepaList.map((cepa, i) => <CepasCard key={ cepa.cepas_idCepa + i } name={ cepa.cepas_idCepa } />)
-                        }
+                        <div className="row">
+                            {
+                                this.state.cepaList.map((cepa, i) => <CepasCard key={cepa.nombreCepa + i} name={cepa.nombreCepa} />)
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

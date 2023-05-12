@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import Cepas from "./SubComponents/Cepas/Cepas";
 import ListadoDeVinos from "./SubComponents/ListadoDeVinos/ListadoDeVinos";
 import Totales from "./SubComponents/Totales/Totales";
