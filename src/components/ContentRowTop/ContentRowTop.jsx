@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Cepas from "./SubComponents/Cepas/Cepas";
+import ListadoDeVinos from "./SubComponents/ListadoDeVinos/ListadoDeVinos";
 import Totales from "./SubComponents/Totales/Totales";
 import UltimoVino from "./SubComponents/UltimoVino/UltimoVino";
 
@@ -22,8 +23,9 @@ function ContentRowTop() {
             cifra: 10,
             color: "warning"            
         }
-        
     ]
+
+         
     return(
         <div className="container-fluid">
         <div className="d-sm-flex align-items-center justify-content-between mb-4">
@@ -43,6 +45,8 @@ function ContentRowTop() {
             <Cepas/>
         </div>
         
+        <ListadoDeVinos/>
+
         <Footer/>
     </div>
     )
