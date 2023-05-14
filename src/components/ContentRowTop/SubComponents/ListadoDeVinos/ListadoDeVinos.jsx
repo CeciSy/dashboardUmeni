@@ -1,5 +1,20 @@
 import React from "react";
 
+
+// class ContentWrapper extends React.Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             vinosTable: []
+//         }
+//     }
+
+// async componentDidMount() {
+//     const response = await fetch ("http://localhost:3031/apiVinos");
+//     const data = await response.json();
+//     this.setState({vinosTable:data.data})
+// }
+
 function ListadoDeVinos(props) {
     return(
         <div className="col-lg-6 mb-4">

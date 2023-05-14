@@ -3,20 +3,8 @@ import ContentRowTop from "../../components/ContentRowTop/ContentRowTop";
 import Footer from "../../components/Footer/Footer";
 import ListadoDeVinos from "../../components/ContentRowTop/SubComponents/ListadoDeVinos/ListadoDeVinos";
 
+function ContentWrapper() {
 
-class ContentWrapper extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            vinosTable: []
-        }
-    }
-
-async componentDidMount() {
-    const response = await fetch ("http://localhost:3031/apiVinos");
-    const data = await response.json();
-    this.setState({vinosTable:data.data})
-}
    /* let arrayTable = [
         {
             nombre: "Brut Nature",
@@ -93,8 +81,6 @@ async componentDidMount() {
     ]     
 */
 
-render() {
-
    return(
     <div id="wrapper" className="d-flex flex-column">
 
@@ -109,7 +95,7 @@ render() {
 			{/* <!--End Footer--> */}
 
             {/* <!-- Content Row Top --> */}
-				<ListadoDeVinos data={this.state.vinosTable} />
+				<ListadoDeVinos />
 			{/* <!--End Content Row Top--> */}
 			</div>
 		
@@ -119,5 +105,5 @@ render() {
     </div>
    )
  }
-}
+
 export default ContentWrapper
