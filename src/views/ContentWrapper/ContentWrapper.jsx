@@ -8,14 +8,14 @@ class ContentWrapper extends React.Component {
     constructor() {
         super();
         this.state = {
-            arrayTable: []
+            vinosTable: []
         }
     }
 
 async componentDidMount() {
-    const response = await fetch ("http://localhost:3031/apiVinos/vinos");
+    const response = await fetch ("http://localhost:3031/apiVinos");
     const data = await response.json();
-    this.setState({arrayTable:data.data})
+    this.setState({vinosTable:data.data})
 }
    /* let arrayTable = [
         {
@@ -109,7 +109,7 @@ render() {
 			{/* <!--End Footer--> */}
 
             {/* <!-- Content Row Top --> */}
-				<ListadoDeVinos data={this.state.arrayTable} />
+				<ListadoDeVinos data={this.state.vinosTable} />
 			{/* <!--End Content Row Top--> */}
 			</div>
 		
