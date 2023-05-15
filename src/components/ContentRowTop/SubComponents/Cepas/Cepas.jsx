@@ -17,7 +17,7 @@ class Cepas extends Component {
                 return respuesta.json()
             })
             .then(cepas => {
-                console.log(cepas)
+                //console.log(cepas)
                 this.setState({ cepaList: cepas.data })
             })
             .catch(error => console.log(error))
