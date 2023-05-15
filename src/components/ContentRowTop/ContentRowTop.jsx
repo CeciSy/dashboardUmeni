@@ -1,7 +1,7 @@
 import React from "react";
 // import Footer from "../Footer/Footer";
 import Cepas from "./SubComponents/Cepas/Cepas";
-import ListadoDeVinos from "./SubComponents/ListadoDeVinos/ListadoDeVinos";
+//import ListadoDeVinos from "./SubComponents/ListadoDeVinos/ListadoDeVinos";
 import Totales from "./SubComponents/Totales/Totales";
 import UltimoVino from "./SubComponents/UltimoVino/UltimoVino";
 
@@ -42,7 +42,7 @@ function ContentRowTop() {
         <div className="row">
             <UltimoVino/>
             <Cepas/>
-            <ListadoDeVinos/>
+            
         </div>
     </div>
     )

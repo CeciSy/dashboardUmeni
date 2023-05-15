@@ -1,21 +1,22 @@
+import { useState, useEffect } from "react";
+import VinoRow from "./subcomponentes/VinoRow";
 import React from "react";
 
+function ListadoDeVinos() {
+    const [vinos, setVinos]= useState([]);
 
-// class ContentWrapper extends React.Component {
-//     constructor() {
-//         super();
-//         this.state = {
-//             vinosTable: []
-//         }
-//     }
-
-// async componentDidMount() {
-//     const response = await fetch ("http://localhost:3031/apiVinos");
-//     const data = await response.json();
-//     this.setState({vinosTable:data.data})
-// }
-
-function ListadoDeVinos(props) {
+    useEffect(() => {
+        console.log("esto esta funcando");
+        fetch("http://localhost:3031/apiVinos")
+        .then(response=> response.json())
+        .then(producto => {
+            setVinos (producto.data)
+           //console.log(producto.data)
+        })
+        
+        .catch(error => console.error(error));
+    }, []);
+    
     return(
         <div className="col-lg-6 mb-4">
         <div className="card shadow mb-4">
@@ -33,15 +34,24 @@ function ListadoDeVinos(props) {
                         <th scope="col">Descripción</th>
                         </tr>
                     </thead>
-                    <tbody data={props.data}/>
+                    <tbody>
+                            {
+                            vinos.map( ( vino , i) => {
+                                return <VinoRow { ...vino} key={vino.nombre + i}/>
+                            })
+                            }
+
+                        </tbody>
+                        
                     </table>
             </div>   
         </div>  
     </div>
     </div>  
         </div> 			
-					
-						
+        
+        
+                		
     )
 }
 
