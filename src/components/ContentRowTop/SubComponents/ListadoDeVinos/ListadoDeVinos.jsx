@@ -30,7 +30,7 @@ function ListadoDeVinos() {
                         <tr>
                         <th scope="col">Nombre</th>
                         <th scope="col">Volumen</th>
-                        <th scope="col">Bodega</th>
+                        <th scope="col">Año</th>
                         <th scope="col">Descripción</th>
                         </tr>
                     </thead>

@@ -2,7 +2,7 @@ import React from "react";
 import ContentRowTop from "../../components/ContentRowTop/ContentRowTop";
 import Footer from "../../components/Footer/Footer";
 import ListadoDeVinos from "../../components/ContentRowTop/SubComponents/ListadoDeVinos/ListadoDeVinos";
-import ListadoDeVinosPrueba from "../../components/ContentRowTop/SubComponents/ListadoDeVinos/ListadoDeVinos";
+
 
 function ContentWrapper()  {
     
