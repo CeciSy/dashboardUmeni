@@ -6,7 +6,7 @@ function ListadoDeVinos() {
     const [vinos, setVinos]= useState([]);
 
     useEffect(() => {
-        console.log("esto esta funcando");
+        //console.log("esto esta funcando");
         fetch("http://localhost:3031/apiVinos")
         .then(response=> response.json())
         .then(producto => {
